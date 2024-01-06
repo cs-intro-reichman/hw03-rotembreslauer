@@ -5,6 +5,7 @@ public class LowerCase {
         System.out.println(lowerCase(str));
     }
 
+
    /**
     * Returns a string which is identical to the original string, 
     * except that all the upper-case letters are converted to lower-case letters.
@@ -30,4 +31,5 @@ public class LowerCase {
        
         return newString;
     }
+
 }
