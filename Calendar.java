@@ -5,7 +5,7 @@ public class Calendar {
 	static int year = 1900;
 	static int dayOfWeek = 2;     // 1.1.1900 was a Monday
 	static int nDaysInMonth = 31; // Number of days in January
-	static int specialSunday = 0;
+	
 
 	
 	/** 
@@ -16,7 +16,6 @@ public class Calendar {
 		// Advances the date and the day-of-the-week from 1/1/1900 till 31/12/1999, inclusive.
 	    // Prints each date dd/mm/yyyy in a separate line. If the day is a Sunday, prints "Sunday".
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
-	    int debugDaysCounter = 0; 
 	    int givenYear = Integer.parseInt(args[0]);
 	    year = givenYear;
 
@@ -26,7 +25,7 @@ public class Calendar {
 
 	 		
 			if (dayOfWeek == 1){
-				System.out.println(dayOfMonth +"/" + month + "/" + year + " Sunday");
+				System.out.println(dayOfMonth +"/" + month + "/" + year +);
 			}else{
 				System.out.println(dayOfMonth +"/" + month + "/" + year);
 			}
