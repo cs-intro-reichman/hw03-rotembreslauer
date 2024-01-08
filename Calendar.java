@@ -25,7 +25,7 @@ public class Calendar {
 
 	 		
 			if (dayOfWeek == 1){
-				System.out.println(dayOfMonth +"/" + month + "/" + year + "Sunday");
+				System.out.println(dayOfMonth +"/" + month + "/" + year + " Sunday");
 			}else{
 				System.out.println(dayOfMonth +"/" + month + "/" + year);
 			}
