@@ -17,16 +17,15 @@ public class Calendar {
 	    // Prints each date dd/mm/yyyy in a separate line. If the day is a Sunday, prints "Sunday".
 	    // The following variable, used for debugging purposes, counts how many days were advanced so far.
 	    int givenYear = Integer.parseInt(args[0]);
-	    year = givenYear;
 
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
 	 	while( year <= givenYear){
 
 	 		
-			if (dayOfWeek == 1){
+			if (dayOfWeek == 1 && year == givenYear){
 				System.out.println(dayOfMonth +"/" + month + "/" + year + " Sunday");
-			}else{
+			}else if (year == givenYear){
 				System.out.println(dayOfMonth +"/" + month + "/" + year);
 			}
 			
@@ -42,22 +41,15 @@ public class Calendar {
 			}	
 	 			
 	 		advance();
-	 		
-
 	 		//debugDaysCounter++;
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 	 		} 
-
 	}
-
-	
 	 // Advances the date (day, month, year) and the day-of-the-week.
 	 // If the month changes, sets the number of days in this month.
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-			
-			
 			if(dayOfMonth < nDaysInMonth(month, year)){
 				dayOfMonth ++;
 			} else {
